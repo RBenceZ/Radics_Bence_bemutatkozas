@@ -1,8 +1,134 @@
 body {
-  margin: 0;                          /* a böngésző alapértelmezett margóját nullázzuk */
-  background-color: chocolate /* HÁTTÉRSZÍN */;
-  color: aliceblue /* SZÖVEGSZÍN */;
-  font-family: 'Times New Roman', Times, serif /* BETŰTÍPUS-LISTA */;
+  margin: 0;
+  background-color: #121212; /* Nagyon sötét szürke (jobb, mint a tiszta fekete) */
+  color: #e0e0e0;            /* Puha törtfehér szöveg */
+  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
-  line-height: 1.7;                /* sortávolság: a betűméret 1,7-szerese */
+  line-height: 1.7;
+}
+
+.fejlec {
+  background-color: #1f1f1f; /* Kicsit világosabb sötétszürke a fejlécnek */
+  color: #ffffff;
+  padding: 40px 20px 32px;
+  text-align: center;
+  border-bottom: 3px solid #3b82f6; /* Egy vékony kék vonal alulra dísznek */
+}
+
+.profilkep {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #3b82f6; /* Modern kék keret a képnek */
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+
+.motto {
+  margin: 0;
+  color: #38bdf8; /* Világos, neonosabb kék/világoskék */
+  font-style: italic;
+}
+
+.menu {
+  background-color: #18181b; /* Igazodik a sötét témájú fejlécünkhöz */
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.menu a {
+  display: inline-block;          
+  color: #ffffff;
+  text-decoration: none;         
+  padding: 6px 14px;
+  margin: 2px;
+  border-radius: 6px;           /* 6px-es lekerekítés a modern, simább dizájnért */
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background-color: #3b82f6; /* Élénk kék, ami pontosan megegyezik a profilkép keretének színével */
+}
+
+.tartalom {
+  width: 90%;              /* keskeny képernyőn a szélesség 90%-a */
+  max-width: 800px /* 800–900px */;   /* de sosem szélesebb ennél */
+  margin: 30px auto;       /* fent-lent 30px, jobbra-balra auto = KÖZÉPRE */
+}
+
+.doboz {
+  background-color: #18181b;      /* Igazodik a sötét fejléc és menü hátteréhez */
+  border: 1px solid #27272a;      /* Diszkrét, sötét szürke keret */
+  border-left: 6px solid #3b82f6;  /* Az említett kék főszín a bal oldali díszcsíkhoz */
+  border-radius: 10px;
+  padding: 24px 28px;            
+  margin-bottom: 26px;          
+}
+
+h2 {
+  margin: 0 0 12px;             
+  color: #60a5fa;                /* Világosabb, figyelemfelkeltő kék a h2-nek a sötét háttéren */
+  font-size: 25px;
+}
+
+strong {
+  color: #60a5fa;                /* Ugyanaz a kék, mint a h2-nél a harmóniáért */
+}
+
+.halvany {
+  color: #a1a1aa;                /* Kulturált, jól olvasható szürkés szín a kevésbé fontos szövegekhez */
+  font-size: 15px;
+}
+
+.lista {
+  margin: 10px 0;
+  padding-left: 24px;         
+}
+
+.lista li {
+  margin-bottom: 7px;         
+}
+
+a {
+  color: #38bdf8;             /* A fő kék színünk a linkekhez, hogy jól látszódjanak a sötét háttéren */
+}
+
+a:hover {
+  color: #60a5fa;             /* Egy valamivel világosabb kék árnyalat egérrel fölötte (hover) */
+}
+
+.kozepre {
+  text-align: center;
+}
+
+.kartyak {
+  text-align: center;           /* a kártyákat középre húzza */
+  margin-bottom: 26px;
+}
+
+.kartya {
+  display: inline-block;      /* egymás mellé, de méretezhetők */
+  width: 220px;                 /* beállítva a megadott sáv közepére */
+  vertical-align: top;        /* a tetejüknél igazodjanak egymáshoz */
+  text-align: left;           /* a kártyán BELÜL viszont balra */
+  background-color: #312c2c;    /* tiszta fehér doboz háttér */
+  border: 1px solid #27272a;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 8px 6px;
+}
+
+.kartya img {
+  width: 100%;                 /* a szülő (kártya) teljes szélessége */
+  border-radius: 6px;
+}
+
+.kartya p {
+  font-size: 15px;
+  color: #b1afaf;               /* elegáns, halványabb szürke szövegszín */
+}
+
+h3 {
+  margin: 12px 0 6px;
+  color: #b8860b;               /* stílusos aranyos / sötét sárga kaszinós főszín */
+  font-size: 19px;
 }
