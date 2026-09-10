@@ -1,0 +1,8 @@
+body {
+  margin: 0;                          /* a böngésző alapértelmezett margóját nullázzuk */
+  background-color: chocolate /* HÁTTÉRSZÍN */;
+  color: aliceblue /* SZÖVEGSZÍN */;
+  font-family: 'Times New Roman', Times, serif /* BETŰTÍPUS-LISTA */;
+  font-size: 17px;
+  line-height: 1.7;                /* sortávolság: a betűméret 1,7-szerese */
+}
