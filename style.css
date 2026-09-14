@@ -132,3 +132,39 @@ h3 {
   color: #b8860b;               /* stílusos aranyos / sötét sárga kaszinós főszín */
   font-size: 19px;
 }
+
+hr {
+  border: none;                    /* a böngésző alap vonala csúnya, leszedjük */
+  border-top: 1px solid #e2ddd3;  /* és rajzolunk sajátot */
+  margin: 20px 0;
+}
+
+.idezet {
+  border-left: 4px solid #3b82f6;
+  background-color: #18181b;
+  padding: 12px 18px;
+  margin: 16px 0 0;
+  font-style: italic;
+}
+
+/* Csak azt írjuk felül, ami más – a többit a .doboz adja. */
+.kiemelt {
+  background-color: #18181b;
+  border-left-color: #3b82f6;
+}
+
+/* Ez valójában egy link – csak gombnak látszik. */
+.gomb {
+  display: inline-block;
+  background-color: #3b82f6; /* FŐSZÍN */;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.gomb:hover {
+  background-color: #1d4ed8; 
+  color: #ffffff;              
+}
